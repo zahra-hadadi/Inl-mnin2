@@ -165,10 +165,10 @@ JOIN Bestallningar ON Kunder.KundID = Bestallningar.KundID
 GROUP BY Kunder.Namn
 HAVING COUNT(Bestallningar.OrderID) > 2;
 
--- Skapa ett index p ̊a e-post i Kunder
+-- Skapa ett index på e-post i Kunder
 CREATE INDEX idx_email ON Kunder(Email);
 
--- constraint som s̈akerställer att priset på produkter alltid ̈ar över 0
+-- constraint som säkerställer att priset på produkter alltid ̈ar över 0
 ALTER TABLE Bocker
 ADD CONSTRAINT check_pris CHECK (Pris > 0);
 
