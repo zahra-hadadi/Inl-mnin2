@@ -22,7 +22,7 @@ Databasen innehåller även index, constraints, triggers och transaktioner för 
 
 Databasen designades som en relationsdatabas för att undvika duplicerad data och göra databasen strukturerad. Tabellerna delades upp så att kundinformation, beställningar och böcker lagras separat. Orderrader används som kopplingstabell mellan beställningar och böcker eftersom en beställning kan innehålla flera böcker. 
 
-Om databasen skulle hantera 100 000 kunder 
+## Om databasen skulle hantera 100 000 kunder 
 
 Om databasen skulle hantera mycket mer data skulle fler index behövas, till exempel på KundID, OrderID och ISBN. Man skulle även kunna använda stored procedures och fler triggers för att automatisera beräkningar och förbättra prestandan. 
 
